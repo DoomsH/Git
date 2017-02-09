@@ -88,6 +88,17 @@ Git 和 SVN
   * -f
 * mkdir 创建文件夹
 
+
+	补充：
+	* file显示文件类型
+	* open使用默认程序打开文件
+	* cp -R 拷贝文件 例如：cp -R README.md ./文件夹
+	* mv移动文件 例如：mv README.md ./文件夹
+	* head显示文件的前几行 例如：head -10 README.md
+	
+
+
+
 Git常用命令:
 
 克隆版本库: git clone https://github.com/用户名/仓库名.git
@@ -100,4 +111,10 @@ Git常用命令:
 
 拉取修改：git pull
 
-这是一条测试
+	
+	补充：
+	* 设置某文件夹为Git管理文件夹：git init
+	* 查看仓库当前的状态：git status
+	* 查看文件做了哪些修改：git diff
+	* 查看文件的历史版本：git log
+	* 
