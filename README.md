@@ -95,7 +95,7 @@ Git 和 SVN
 	* cp -R 拷贝文件 例如：cp -R README.md ./文件夹
 	* mv移动文件 例如：mv README.md ./文件夹
 	* head显示文件的前几行 例如：head -10 README.md
-	
+
 
 
 
@@ -111,10 +111,10 @@ Git常用命令:
 
 拉取修改：git pull
 
-	
+
 	补充：
 	* 设置某文件夹为Git管理文件夹：git init
 	* 查看仓库当前的状态：git status
 	* 查看文件做了哪些修改：git diff
 	* 查看文件的历史版本：git log
-	* 
+	* 回滚到指定文件版本：git reset
