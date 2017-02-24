@@ -112,6 +112,80 @@ Git常用命令:
 拉取修改：git pull
 
 
+
+
+
+### Git 讲解
+
+```
+git clone
+
+git add .
+
+git commit -m  ‘ ’
+
+git pull
+
+git push
+```
+
+##### 将修改添加到暂存区
+
+```
+git add <file>
+```
+
+##### 将修改从暂存区移除
+
+```
+git rm --cached <file>	
+```
+
+##### 查询git状态
+
+```
+git status
+```
+
+##### 查询当前某文件与分支或暂存区中有何不同、
+
+```
+git diff HEAD --<file>
+```
+
+
+
+### 忽略特殊文件/文件夹
+
+需要生成.gitignore文件，一般来说，不需要自己创建
+
+可以通过[Gitignore](https://github.com/github/gitignore)地址下载对应语言的.gitignore文件
+
+例：
+
+> 使用node.js开发，则去下载Node.gitignore文件。
+
+使用时，需要将Node.gitignore改名为.gitignore才会生效。
+
+
+
+#### .gitignore
+
+在该文件中添加忽略规则，可以填入文件名/文件夹名。
+
+例：在.gitignore中添加如下代码
+
+```
+node_modules/
+```
+
+则该文件夹下所有文件/文件夹都会被git忽略
+
+
+
+
+
+
 	补充：
 	* 设置某文件夹为Git管理文件夹：git init
 	* 查看仓库当前的状态：git status
