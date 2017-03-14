@@ -153,6 +153,42 @@ git status
 git diff HEAD --<file>
 ```
 
+##### 查询当前所有本地分支
+
+```
+git branch
+```
+
+##### 查询全部分支（本地和远端）
+
+```
+git branch -a
+```
+
+##### 创建本地分支
+
+````
+git branch 本地分支名
+````
+
+##### 创建本地分支并与远端分支关联
+
+````
+git branch 本地分支名 origin/远端分支名
+````
+
+##### 追踪关联
+
+````
+git branch --track 本地分支名 origin/远端分支
+````
+
+##### 切换分支
+
+````
+git checkout 本地分支名
+````
+
 
 
 ### 忽略特殊文件/文件夹
@@ -192,3 +228,22 @@ node_modules/
 	* 查看文件做了哪些修改：git diff
 	* 查看文件的历史版本：git log
 	* 回滚到指定文件版本：git reset
+
+
+````
+Commit尽量使用英文。
+commit的规则如下。
+一般情况下，提交 GIT 时的注释可以分成几类，可以用几个动词开始：
+
+Added ( 新加入的需求 )
+Fixed ( 修复 bug )
+Changed ( 完成的任务 )
+Updated ( 完成的任务，或者由于第三方模块变化而做的变化 )
+尽量将注释缩减为一句话，不要包含详细的内容。
+假如有 Issues 系统，其中可以包含 Issue 的 ID。比如：Issue #123456
+包含作者的信息。比如 by Bruce
+完整例子：
+git commit -m 'Issue #[issue number] by [username]: [Short summary of the change].'
+Related articles
+````
+
